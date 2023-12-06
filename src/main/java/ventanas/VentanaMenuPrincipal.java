@@ -67,11 +67,15 @@ public class VentanaMenuPrincipal extends VentanaBase {
             this.dispose();
         }
         if(event.getSource() == btEliminar){
-            //new ventanaEliminar();
+            new VentanaEliminar();
+            this.dispose();
+        }
+        if(event.getSource() == btModificar){
+            new VentanaModificar();
             this.dispose();
         }
         if(event.getSource() == btBuscar){
-           // new ventanaBuscar();
+            new VentanaBuscar();
             this.dispose();
         }
         if(event.getSource() == btMostrar){
